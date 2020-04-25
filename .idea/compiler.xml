@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="webservices" />
         <module name="web" />
-        <module name="convert-mvc-to-boot" />
       </profile>
     </annotationProcessing>
   </component>

@@ -11,7 +11,7 @@
         <module>webservices</module>
         <module>web</module>
     </modules>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
 
     <name>convert-mvc-to-boot Maven Webapp</name>
     <!-- FIXME change it to the project's website -->
