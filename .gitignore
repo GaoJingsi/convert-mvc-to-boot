@@ -1,0 +1,4 @@
+# Project exclude paths
+/out/
+/web/target/
+/webservices/target/
