@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 
 @Service
-@Primary
 public class TestSqlServerService implements ITestService {
 
     @Autowired

@@ -16,6 +16,8 @@ security:
       user-authorization-uri: ${auth-server-url}/oauth/authorize
     resource:
       token-info-uri: ${auth-server-url}/check_token
+      jwt:
+        key-uri: ${auth-server-url}/oauth/token_key
 #    resource:
 #      jwt:
 #        key-uri: ${auth-server-url}/oauth/token_key
