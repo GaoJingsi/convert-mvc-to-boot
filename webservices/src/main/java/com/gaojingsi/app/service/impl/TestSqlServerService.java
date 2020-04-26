@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 
 @Service
-@Primary
 public class TestSqlServerService implements ITestService {
 
     @Autowired
@@ -18,7 +17,8 @@ public class TestSqlServerService implements ITestService {
     @Override
     public String getData() {
 
-        Map<String, Object> map = testMapper.testProcedureWithParameter("1001");
+//        没有数据会报null
+        Map<String, Object> map = testMapper.testProcedureWithParameter("1002");
 //        for (Map.Entry<String, Object> entry :
 //                map.entrySet()) {
 //
