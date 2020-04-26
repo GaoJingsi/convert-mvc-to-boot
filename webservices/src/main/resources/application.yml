@@ -1,0 +1,12 @@
+spring:
+  datasource:
+      username: sa
+      password: jokeep@sql2020
+      url: jdbc:sqlserver://117.139.13.112:7070;DatabaseName=JKQWWA
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      hikari:
+        maximum-pool-size: 20
+        connection-timeout: 30000
+        connection-test-query: select 1
+        minimum-idle: 2
+
