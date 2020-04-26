@@ -9,4 +9,5 @@ spring:
         connection-timeout: 30000
         connection-test-query: select 1
         minimum-idle: 2
-
+server:
+  port: 8081

@@ -1,5 +1,27 @@
+
 spring:
   mvc:
     view:
       prefix: /WEB-INF/
       suffix: .jsp
+
+auth-server-url: http://localhost:8081 # 授权服务地址
+security:
+  oauth2:
+    client:
+      client-id: gaojingsi
+      client-secret: 111111
+      scope: test
+      access-token-uri: ${auth-server-url}/oauth/token
+      user-authorization-uri: ${auth-server-url}/oauth/authorize
+    resource:
+      token-info-uri: ${auth-server-url}/check_token
+#    resource:
+#      jwt:
+#        key-uri: ${auth-server-url}/oauth/token_key
+server:
+  port: 8080
+  servlet:
+    session:
+      cookie:
+        name: WEBJSESSIONID
