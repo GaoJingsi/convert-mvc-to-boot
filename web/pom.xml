@@ -70,5 +70,26 @@
     <!--        </plugins>-->
     <!--    </build>-->
 
+    <build>
+        <resources>
+            <resource>
+                <!--指定资源目录，解决spring boot不能直接访问jsp的问题-->
+                <directory>src/main/webapp</directory>
+                <!--这里必须是META-INF/resources-->
+                <targetPath>META-INF/resources</targetPath>
+                <includes>
+                    <include>**/**</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
 
 </project>

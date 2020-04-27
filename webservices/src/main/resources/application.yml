@@ -9,5 +9,9 @@ spring:
         connection-timeout: 30000
         connection-test-query: select 1
         minimum-idle: 2
+  mvc:
+    view:
+      prefix: /WEB-INF/
+      suffix: .jsp
 server:
   port: 8081
